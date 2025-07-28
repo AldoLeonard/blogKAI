@@ -52,9 +52,9 @@
         </div>
     </section>
 
-    <section class="max-w-5xl mx-auto px-6 py-10 min-h-screen">
+    <section class="max-w-5xl mx-auto px-6 py-10 min-h-screen place-items-center">
         {{-- title blog --}}
-        <h1 class="text-5xl font-extrabold text-center my-10">BLOG</h1>
+        <h1 class="text-5xl font-extrabold text-center my-20">BLOG</h1>
         <!-- Filter dan Search -->
         <div class="my-10 w-full grid grid-cols-3 gap-4 items-center">
             <!-- Filter Buttons -->
@@ -100,23 +100,26 @@
                             class="w-full h-auto transition-transform duration-500 group-hover:scale-110">
 
                         <!-- Overlay hitam transparan -->
-                        <div class="absolute cursor-pointer inset-0 bg-gradient-to-b from-black/0 to-black/40 opacity-100 group-hover:opacity-0 transition-opacity duration-500"></div>
+                        <div
+                            class="absolute cursor-pointer inset-0 bg-gradient-to-b from-black/0 to-black/40 opacity-100 group-hover:opacity-0 transition-opacity duration-500">
+                        </div>
 
                         <!-- Label kategori -->
-                        <div class="absolute top-3 right-3 bg-[#3674B5] text-white text-sm font-bold px-3 py-1 rounded-lg">
+                        <div
+                            class="absolute cursor-text top-3 right-3 bg-[#3674B5] text-white text-sm font-bold px-3 py-1 rounded-lg">
                             Sejarah
                         </div>
                     </div>
                 </a>
                 <h1 class="text-2xl font-bold my-3">Lorem ipsum dolor sit amet consectetur.</h1>
-                <div class="flex  gap-4 place-items-center">
+                <div class="flex gap-4 mb-5 place-items-center">
                     <p class="text-sm font-medium flex gap-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                         </svg>
                         Aldo Leo</p>
-                        |
+                    |
                     <p class="text-sm font-medium flex gap-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -125,6 +128,31 @@
                         28 Juli 2025</p>
                 </div>
             </div>
+        </div>
+        <div class="flex items-center gap-8 mt-20">
+            <button disabled
+                class="rounded-md border border-slate-300 p-2.5 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                    <path fill-rule="evenodd"
+                        d="M11.03 3.97a.75.75 0 0 1 0 1.06l-6.22 6.22H21a.75.75 0 0 1 0 1.5H4.81l6.22 6.22a.75.75 0 1 1-1.06 1.06l-7.5-7.5a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 0 1 1.06 0Z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+
+            <p class="text-slate-600">
+                Page <strong class="text-slate-800">1</strong> of&nbsp;<strong class="text-slate-800">10</strong>
+            </p>
+
+            <button
+                class="rounded-md border border-slate-300 p-2.5 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-[#3674B5] focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                    <path fill-rule="evenodd"
+                        d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
         </div>
     </section>
 
