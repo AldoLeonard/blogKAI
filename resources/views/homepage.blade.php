@@ -28,7 +28,7 @@
             <div class="hidden md:flex items-center space-x-8">
                 <a href="{{ url('/') }}"
                     class="text-sm font-medium text-white hover:underline underline-offset-5">Home</a>
-                <a href="" class="text-sm font-medium text-white hover:underline underline-offset-5">About</a>
+                <a href="{{ url('/about') }}" class="text-sm font-medium text-white hover:underline underline-offset-5">About</a>
             </div>
 
             <!-- Search Box & Sign in/Sign out -->
@@ -164,10 +164,10 @@
                 </a>
                 <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                     <li>
-                        <a href="#" class="text-sm font-medium text-white hover:underline underline-offset-5 me-4 md:me-6">Home</a>
+                        <a href="{{ url('/') }}" class="text-sm font-medium text-white hover:underline underline-offset-5 me-4 md:me-6">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm font-medium text-white hover:underline underline-offset-5">About</a>
+                        <a href="{{ url('/about') }}" class="text-sm font-medium text-white hover:underline underline-offset-5">About</a>
                     </li>
                 </ul>
             </div>
