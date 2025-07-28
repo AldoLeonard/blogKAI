@@ -60,19 +60,19 @@
             <!-- Filter Buttons -->
             <div class="col-span-2 flex gap-5 w-full justify-between">
                 <a href=""
-                    class="flex-1 text-center text-md font-medium bg-[#3674B5] text-white py-2 rounded-xl hover:bg-[#254F7B] transition-all">
+                    class="flex-1 text-center text-md font-bold bg-[#3674B5] text-white py-2 rounded-xl hover:bg-[#254F7B] transition-all">
                     Kategori 1
                 </a>
                 <a href=""
-                    class="flex-1 text-center text-md font-medium bg-[#3674B5] text-white py-2 rounded-xl hover:bg-[#254F7B] transition-all">
+                    class="flex-1 text-center text-md font-bold bg-[#3674B5] text-white py-2 rounded-xl hover:bg-[#254F7B] transition-all">
                     Kategori 2
                 </a>
                 <a href=""
-                    class="flex-1 text-center text-md font-medium bg-[#3674B5] text-white py-2 rounded-xl hover:bg-[#254F7B] transition-all">
+                    class="flex-1 text-center text-md font-bold bg-[#3674B5] text-white py-2 rounded-xl hover:bg-[#254F7B] transition-all">
                     Kategori 3
                 </a>
                 <a href=""
-                    class="flex-1 text-center text-md font-medium bg-[#3674B5] text-white py-2 rounded-xl hover:bg-[#254F7B] transition-all">
+                    class="flex-1 text-center text-md font-bold bg-[#3674B5] text-white py-2 rounded-xl hover:bg-[#254F7B] transition-all">
                     Kategori 4
                 </a>
             </div>
@@ -93,22 +93,36 @@
         <!-- Grid Gambar -->
         <div class="grid grid-cols-3 gap-5 mx-auto mt-8">
             <div>
-                <a href=""><img src="/img/image1.jpg" alt=""></a>
+                <a href="">
+                    <div class="relative w-fit overflow-hidden rounded-lg group">
+                        <!-- Gambar -->
+                        <img src="/img/image1.jpg" alt=""
+                            class="w-full h-auto transition-transform duration-500 group-hover:scale-110">
+
+                        <!-- Overlay hitam transparan -->
+                        <div class="absolute cursor-pointer inset-0 bg-gradient-to-b from-black/0 to-black/40 opacity-100 group-hover:opacity-0 transition-opacity duration-500"></div>
+
+                        <!-- Label kategori -->
+                        <div class="absolute top-3 right-3 bg-[#3674B5] text-white text-sm font-bold px-3 py-1 rounded-lg">
+                            Sejarah
+                        </div>
+                    </div>
+                </a>
                 <h1 class="text-2xl font-bold my-3">Lorem ipsum dolor sit amet consectetur.</h1>
-                <div class="flex justify-between place-items-center">
+                <div class="flex  gap-4 place-items-center">
                     <p class="text-sm font-medium flex gap-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                         </svg>
-                        Author</p>
+                        Aldo Leo</p>
                         |
                     <p class="text-sm font-medium flex gap-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        Waktu</p>
+                        28 Juli 2025</p>
                 </div>
             </div>
         </div>
